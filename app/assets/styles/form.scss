@@ -1,0 +1,203 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.button {
+  @include button_style();
+}
+
+.button_font_size32 {
+  @include button_style();
+  font-size: set-size(32) !important;
+}
+.button_font_size28 {
+  @include button_style();
+  font-size: set-size(28) !important;
+}
+.button_font_size26 {
+  @include button_style();
+  font-size: set-size(26) !important;
+}
+.button_border_radius_none{
+  @include button_style();
+  border-radius: 0 !important;
+}
+.button_size34 {
+  @include button_style();
+  padding: set-size(34) 0 !important;
+}
+.button_size26 {
+  @include button_style();
+  padding: set-size(20) 0 !important;
+}
+.button_size18 {
+  @include button_style();
+  padding: set-size(12) 0 !important;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  height: set-size(58);
+  line-height: set-size(58);
+  background: $white_color;
+  position: relative;
+  border-radius: set-size(10);
+  span {
+    display: flex;
+    width: set-size(58);
+    height: set-size(58);
+    background: url("../img/img_search.png") no-repeat center;
+    background-size: set-size(32);
+  }
+  form {
+    margin-right: set-size(58);
+  }
+  input,form {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: inherit;
+    font-size:set-size(28);
+  }
+  input.anzhuo{
+    padding-top:set-size(9);
+    -webkit-appearance:none;
+  }
+
+  button {
+    position: absolute;
+    width: set-size(58);
+    height: set-size(58);
+    background: url("../img/img_input_clear.png") no-repeat center;
+    background-size: set-size(32);
+    right: 0;
+    top: 0;
+  }
+  input::-webkit-input-placeholder {
+    color: $border_color;
+  }
+}
+.input_layer{
+  flex: 1;
+  display: flex;
+  border-bottom: 1px #e5e5e5 solid;
+  margin-left: set-size(30);
+
+  span{
+    display: inline-block;
+    height: set-size(106);
+    line-height: set-size(106);
+    font-size: set-size(28);
+  }
+  .input_name_label{
+    margin-right: set-size(20);
+  }
+  .input_name_class{
+    padding-right: set-size(30);
+  }
+  &.input_layer_last{
+    margin-left: 0;
+    padding-left: set-size(30);
+  }
+}
+// 解决英文情况下 设置二维码收款金额栏的 YOYO完全靠近右边的问题
+.sp_input_wrapper{
+  input{
+    width: 100px;
+  }
+}
+.input{
+  background:$white_color;
+  flex: 1;
+  padding: set-size(34)set-size(10);
+  font-size: set-size(26);
+  height: set-size(26);
+  line-height: set-size(26);
+  box-sizing: content-box;
+  &.input::-webkit-input-placeholder {
+    color:  $border_color;
+  }
+  &.input_font_size_38{
+    font-size: set-size(38);
+    height: set-size(38);
+    line-height: set-size(38);
+  }
+  &.input_font_size_30{
+    font-size: set-size(30);
+    height: set-size(30);
+    line-height: set-size(30);
+  }
+}
+.layer_draw_bar{
+  width: 100%;
+  padding: 0 set-size(30);
+  .title{
+    width: 100%;
+    height: set-size(98);
+    line-height: set-size(98);
+    span{
+      font-size: set-size(24);
+    }
+    .tit_num{
+      font-size: set-size(28);
+    }
+    span:first-child{
+      float:left;
+      font-size: set-size(28);
+    }
+    span:last-child{
+      float: right;
+      font-size: set-size(24);
+      em{
+        color: #ff3f00;
+        font-style: normal;
+      }
+    }
+  }
+  .bar{
+    width: 100%;
+    height: set-size(30);
+    position: relative;
+    padding: set-size(5) 0;
+    div:first-child{
+      width: 100%;
+      height: set-size(20);
+      border-radius: set-size(10);
+      background: $border_color;
+    }
+    div:nth-child(2){
+      width:0;
+      height: set-size(20);
+      position: absolute;
+      top: set-size(5);
+      border-radius: set-size(10);
+      background: -webkit-linear-gradient(left ,rgb(147, 186, 248), #2E7EFE);
+      z-index: 1;
+    }
+    .draw_obj{
+      position: absolute;
+      z-index: 2;
+      top: set-size(-5);
+      width: set-size(40);
+      height: set-size(40);
+      span{
+        display: block;
+        width: set-size(20);
+        height: set-size(20);
+        border-radius: 100%;
+
+        border: set-size(10) $white_color solid;
+        background: $border_color;
+
+        box-shadow: 0px 0px 10px 5px $border_color;
+      }
+    }
+
+  }
+  .number{
+    padding-top:set-size(40) ;
+    input{font-size: set-size(42);}
+    border-bottom: 1px #e5e5e5 solid;
+  }
+}

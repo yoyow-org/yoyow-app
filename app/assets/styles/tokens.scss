@@ -1,0 +1,269 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.tokens_index{
+    position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    >ul{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        bottom:set-size(100);
+        overflow-y: auto;
+        >li.tokens_index_list{
+            padding: set-size(20) set-size(30);
+            background: $white_color;
+            margin-bottom: set-size(20);
+            >ul{
+                li.tokens_index_item{
+                    display:flex;
+                    flex-direction: row;
+                    padding: set-size(10) set-size(0);
+                    .tokens_index_item_label{
+                        padding-right: set-size(10);
+                        font-size:set-size(24);
+                        color:$normal_color;
+                    }
+                    .tokens_index_item_content{
+                        padding-left: set-size(10);
+                        flex: 1;
+                        font-size:set-size(28);
+                        color:$main_color;
+                        word-wrap: break-word;
+                        word-break: normal;
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        >li.tokens_index_list:last-child{
+            margin-bottom: set-size(0);
+        }
+    }
+    .tokens_index_add_box{
+        width: 100%;
+        display: flex;
+        padding: set-size(10) set-size(30) set-size(10) set-size(10);
+        background: $white_color;
+        box-shadow:0px set-size(1) set-size(10) $prominent_color;
+        position: absolute;
+        bottom: 0;
+        button{
+            background-color: $prominent_color !important;
+        }
+    }
+    .tokens_index_undata{
+        width: 100%;
+        text-align: center;
+        img{
+            margin-top: set-size(200);
+            width: set-size(440);
+            height: set-size(288);
+        }
+        span{
+            font-size:set-size(30);
+            line-height: set-size(90);
+            color: $minor_color;
+        }
+    }
+    .token_search_botton{
+        padding: set-size(20) set-size(30);
+    }
+    .tokens_view_list{
+        position: absolute;
+        top: set-size(100);
+        width: 100%;
+        bottom:0;
+        overflow-y: auto;
+        background-color: #fff;
+        .tokens_view_list_item{
+            margin-left: set-size(30);
+            padding: set-size(30) set-size(0);
+            border-bottom: set-size(1) solid #e5e5e5;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            >div{
+                flex: 1;
+                font-size:set-size(28);
+                color: $main_color;
+            }
+            .tpken_amount{
+                font-weight: bold;
+            }
+            .token_botton{
+                text-align: right;
+            }
+        }
+        .tokens_view_list_item:last-child{
+            margin-left: set-size(0);
+            padding-left: set-size(30);
+        }
+    }
+
+    .tokens_search_view_list{
+        top: set-size(0);
+    }
+}
+
+.tokens_add{
+    position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    font-size: set-size(28);
+    >ul.form{
+        display: flex;
+        flex-direction: column;
+        padding-left: set-size(20);
+        >li{
+            border-bottom: set-size(1) solid $border_color;
+            padding: set-size(30) set-size(0);
+            input{
+                width: 100%;
+                box-sizing: inherit;
+                font-size:set-size(30);
+            }
+            input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+                color: $border_color;
+                font-size: set-size(30);
+                text-align: left;
+            }
+        }
+        >li.token_memo{
+            padding: 0.75rem 0.25rem 0.75rem 0rem;
+            position: relative;
+            margin-left: set-size(-20);
+            .layer_textArea{
+                position: relative;
+                border: 1px #e5e5e5 solid;
+                border-radius: 0.25rem;
+                padding: 0.25rem;
+                margin-left: .5rem;
+                textarea{
+                    resize: none;
+                    height: 4.25rem;
+                    width: 100%;
+                    font-size: 0.75rem;
+                }
+                .length{
+                    text-align: right;
+                    bottom: 1.5rem;
+                    font-size: 0.75rem;
+                    em {
+                        color: #ff3f00;
+                    }
+                }
+            }
+        }
+        >li.tokens_draw_bar{
+            padding: set-size(30) set-size(0);
+            .layer_draw_bar_box{
+                width:100%;
+                display: flex;
+                flex-direction: row;
+                .layer_draw_bar_box_title{
+                    width: set-size(130);
+                    text-align: left;
+                    span{
+                    font-size: set-size(24);
+                    }
+                    span:first-child{
+                    float:left;
+                    font-size: set-size(28);
+                    }
+                    span:last-child{
+                        float: right;
+                        font-size: set-size(24);
+                        em{
+                            color: #ff3f00;
+                            font-style: normal;
+                        }
+                    }
+                }
+                .layer_draw_bar_box_bar{
+                    flex: 1;
+                    height: set-size(30);
+                    position: relative;
+                    padding: set-size(5);
+                    div:first-child{
+                        width: 100%;
+                        height: set-size(20);
+                        border-radius: set-size(10);
+                        background: $border_color;
+                    }
+                    div:nth-child(2){
+                        width:0;
+                        height: set-size(20);
+                        position: absolute;
+                        top: set-size(5);
+                        border-radius: set-size(10);
+                        background: -webkit-linear-gradient(left ,#9cc2ff, #2E7EFE);
+                        z-index: 1;
+                    }
+                    .layer_draw_bar_box_draw_obj{
+                        position: absolute;
+                        z-index: 2;
+                        top: set-size(-5);
+                        width: set-size(40);
+                        height: set-size(40);
+                        span{
+                            display: block;
+                            width: set-size(20);
+                            height: set-size(20);
+                            border-radius: 100%;
+                            border: set-size(10) $white_color solid;
+                            background: $border_color;
+                            box-shadow: 0px 0px 10px 5px $border_color;
+                        }
+                    }
+                }
+                .layer_draw_bar_box_number{
+                    width: set-size(130);
+                    text-align: center;
+                    color: $prominent_color;
+                }
+            }
+        }
+    }
+    .tokens_add_free{
+        width: 100%;
+        color:$normal_color;
+        padding: set-size(30) set-size(30) set-size(30) set-size(30);
+        .free{
+            color:$red_color;
+        }
+    }
+    .tokens_add_submit_box{
+        width: 100%;
+        display: flex;
+        padding: set-size(10) set-size(30) set-size(10) set-size(10);
+        button{
+            background-color: $prominent_color !important;
+        }
+    }
+}
+
+.switch{
+    display: inline-block;
+    margin-right: set-size(30);
+    width: set-size(102);
+    height: set-size(64);
+}
+
+.turnoff{
+    background: url(../img/img_token_turn_off.png) center no-repeat;
+    background-size: set-size(102);
+
+}
+
+.turnon{
+    background: url(../img/img_token_turn_on.png) center no-repeat;
+    background-size: set-size(102);
+}

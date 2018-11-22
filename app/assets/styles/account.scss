@@ -1,0 +1,1086 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.create_account_bg{
+    width: 100%;
+    height: 100%;
+    // background: url("../img/img_background.png") no-repeat top center fixed;
+    background: #fff;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    overflow-y: auto;
+    .header{
+        top: 0 !important;
+    }
+}
+
+.create_account_guide{
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .img_layer{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        z-index: 14;
+        img{
+            width: 100%;
+        }
+        .img_guide_create_1{
+            margin-top: set-size(574);
+        }
+        .img_guide_create_2{
+            margin-top: set-size(594);
+        }
+        .img_guide_create_3{
+            margin-top: set-size(13);
+        }
+    }
+
+}
+
+.create_account_full_header{
+    width: 100%;
+    height: 2.25rem;
+    background: -webkit-linear-gradient(left, #354e6c, #7c8a7d);
+}
+
+.create_account_header {
+    background-color: $prominent_color;
+    width: 100%;
+    position: relative;
+    height: set-size(60);
+    padding: set-size(20) set-size(20) 0 set-size(28);
+    .create_account_back{
+        width: set-size(22);
+        height: set-size(34);
+    }
+}
+
+.create_account_scan{
+    width: set-size(42);
+    height: set-size(42);
+    position: absolute;
+    right: set-size(28);
+    background: url("../img/img_scanning.png") no-repeat center center;
+    background-size: set-size(42);
+}
+.greenBtn{
+    background: url("../img/img_scanning_green.png")no-repeat center center;
+    background-size: set-size(42);
+
+}
+.create_account_logo_wrapper{
+    width: 100%;
+    text-align: center;
+    padding-top: set-size(20);
+    background-color: $prominent_color;
+    .create_account_logo{
+        width: set-size(198);
+        height: set-size(204);
+        margin: auto 0;
+    }
+}
+
+.create_account_input_wrapper{
+    margin: set-size(60) set-size(50) 0 set-size(50);
+    padding: set-size(2);
+    background: white;
+    border-radius: set-size(10);
+    .create_account_input_line{
+        display: flex;
+        font-size: set-size(26);
+        padding: set-size(34) set-size(30);
+        input{
+            flex: 1;
+            margin-left: set-size(60);
+        }
+    }
+    .create_account_input_min{
+        padding-top: set-size(20);
+        padding-bottom: set-size(20);
+    }
+    .create_account_input_lock{
+        background: url("../img/img_password_lock.png") no-repeat left set-size(30) center;
+        background-size: set-size(30);
+    }
+
+    .create_account_input_wallet{
+        background: url("../img/img_wallet_name.png") no-repeat left set-size(30) center;
+        background-size: set-size(30);
+    }
+}
+
+.create_account_input_wrapper_x{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    padding-left: set-size(50);
+    padding-right: set-size(50);
+    background-color: $prominent_color;
+    .create_account_input_line_wrapper{
+        display: flex;
+        border-radius: set-size(10);
+        overflow: hidden;
+        &:nth-child(1){
+            margin-top: set-size(102);
+        }
+        &:nth-child(2){
+            margin-top: set-size(70);
+        }
+        border-top: 1px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        border-left: 1px solid #ffffff;
+        .brick{
+            height: set-size(98);
+            width: 4px;
+            background: #2E7EFE;
+            border-top: 1px solid #2E7EFE;
+            border-bottom: 1px solid #2E7EFE;
+        }
+        .create_account_input_line{
+            display: flex;
+            flex: 1;
+            background: url("../img/img_password_lock_white.png") no-repeat left set-size(30) center rgba(255, 255, 255, 0);
+            background-size: set-size(30);
+            height: set-size(98);
+            padding-left: set-size(90);
+            input{
+                flex: 1;
+                color: white;
+                &::-webkit-input-placeholder{ color:#ccc }
+                margin-right: set-size(20);
+                font-size: set-size(26);
+            }
+            .level_brick{
+                width: set-size(60);
+                height: set-size(48);
+                margin-top: set-size(19);
+                margin-right: set-size(20);
+                // border: 1px solid #ffffff;
+                background: url(../img/level_brick_default.png) no-repeat center center;
+                background-size: set-size(60) set-size(48);
+            }
+
+            .create_account_level_low{
+                // background: -webkit-linear-gradient(bottom, #ffff00 100%,#2E7EFE 100%) no-repeat scroll 0 set-size(43) transparent;
+                background: url(../img/level_brick_level_01.png) no-repeat center center;
+                background-size: set-size(60) set-size(48);
+            }
+
+            .create_account_level_mid{
+                // background: -webkit-linear-gradient(bottom, #ffff00 70%,#2E7EFE 100%) no-repeat scroll 0 set-size(28) transparent;
+                background: url(../img/level_brick_level_02.png) no-repeat center center;
+                background-size: set-size(60) set-size(48);
+            }
+
+            .create_account_level_high{
+                // background: -webkit-linear-gradient(bottom, #ffff00 40%,#2E7EFE 100%) no-repeat scroll 0 set-size(13) transparent;
+                background: url(../img/level_brick_level_03.png) no-repeat center center;
+                background-size: set-size(60) set-size(48);
+            }
+
+            .create_account_level_per{
+                // background: -webkit-linear-gradient(bottom, #ffff00 0%,#2E7EFE 100%);
+                background: url(../img/level_brick_level_04.png) no-repeat center center;
+                background-size: set-size(60) set-size(48);
+            }
+
+            
+        }
+    }
+    .create_account_message{
+        color: $red_color;
+        margin-top: set-size(20);
+        margin-bottom: set-size(22);
+        font-size: set-size(22);
+        text-align: right;
+    }
+    .create_account_message.create_account_message_low{
+        color: $red_color;
+    }
+    .create_account_message.create_account_message_mid{
+        color: #FFE500;
+    }
+    .create_account_message.create_account_message_height{
+        color: #51FF00;
+    }
+}
+
+.create_account_level_wrapper{
+    display: flex;
+    .create_account_level_show{
+        font-size: set-size(26);
+        padding-top: set-size(16);
+    }
+    
+    .create_account_level{
+        line-height: set-size(12);
+        margin-left: set-size(12);
+        li{
+            background: #ccc;
+            margin-top: set-size(4);
+            width: set-size(26);
+        }
+    }
+}
+
+.create_account_level_low{
+    color: #ff6a19 !important;
+    .level_active{
+        background: #ff6a19 !important;
+    }
+}
+
+.create_account_level_mid{
+    color: #ff9019 !important;
+    .level_active{
+        background: #ff9019 !important;
+    }
+}
+
+.create_account_level_high{
+    color: #2fb400 !important;
+    .level_active{
+        background: #2fb400 !important;
+    }
+}
+
+.create_account_border_line{
+    border-bottom: 1px #e5e5e5 solid;
+}
+
+.create_account_protocol_wrapper{
+    padding: set-size(42) set-size(30) 0 set-size(50);
+    background-color: $prominent_color;
+    input{
+        position: relative;
+        top: set-size(2);
+    }
+    .create_account_readed{
+        margin-left: set-size(16);
+        color: $white_color;
+        font-size: set-size(24) !important;
+    }
+    .create_account_protocol{
+        margin-left: set-size(14);
+        color: $light_green_color;
+        font-size: set-size(24);
+    }
+}
+
+.create_account_import_wrapper{
+    padding-top: set-size(30);
+    padding-bottom: set-size(100);
+    background-color: $prominent_color;
+    text-align: center;
+    flex: 1;
+    .create_account_import{
+        color: $light_green_color;
+        font-size: set-size(26);
+    }
+}
+
+.crate_account_bottom_wrapper{
+    flex: 1;
+    .create_account_bottom{
+        padding: set-size(20) set-size(50);
+        // background: rgba(0,0,0,0.1);
+        // border: 2px dashed rgba(255,255,255, 0.1);
+        // border-radius: 11px;
+        text-align: center;
+        background-color: #fff;
+        .create_account_bottom_light{
+            width: set-size(34);
+            height: set-size(40);
+            margin-bottom: set-size(10);
+        }
+        span{
+            display: inline-block
+        }
+        .crate_account_bottom_tips{
+            color: $red_color;
+            font-size: set-size(24);
+            line-height: set-size(50);
+            &:nth-last-child(2),
+            &:nth-last-child(1){
+                margin-top: set-size(16);
+            }
+            &:nth-last-child(1){
+                margin-bottom: set-size(14);
+            }
+        }
+    }
+}
+
+.create_checkbox{
+    background: url('../img/img_checkbox_true.png');
+    background-size: set-size(24) set-size(24);
+    width: set-size(24);
+    height: set-size(24);
+}
+
+
+.create_account_layer_button{
+    padding-left: set-size(50);
+    padding-right: set-size(50);
+    padding-top: set-size(80);
+    background-color: $prominent_color;
+    input{
+        font-size: set-size(28);
+        width: 100%;
+        height: set-size(80);
+        line-height: set-size(80);
+        background:#EFEFF4; 
+        border: none; 
+        color: #ccc;
+        border-radius: set-size(10);
+    }
+    .create_account_button_useable{
+        background: #fff;
+        border: none;
+        color: $prominent_color;
+    }
+}
+
+.create_success_bg{
+    background: white;
+    .create_success_info{ 
+        margin-top: set-size(86);
+        background:$prominent_color;
+        color: $white_color;
+        padding:set-size(100) 0;
+    }
+    .create_success_img{
+        display: block;
+        width: set-size(120);
+        height: set-size(120);
+        margin: 0 auto;
+        margin-bottom: set-size(40);
+    }
+
+    .create_success_complate_layer{
+        padding-left: set-size(225);
+        padding-top: set-size(80);
+        padding-right: set-size(225);
+        background-color: $white_color;
+        button{
+            font-size:set-size(28);
+            background: $prominent_color !important;
+        }
+    }
+
+    span{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .create_success_msg_1{
+        font-size: set-size(30);
+    }
+
+    .create_success_msg_2{
+        font-size: set-size(26);
+        margin-top: set-size(30);
+    }
+}
+
+.create_message_panel{
+    color: #db0000;
+    text-align: right;
+    font-size: set-size(22);
+    padding-left: set-size(30);
+    padding-right: set-size(30);
+    padding-bottom: set-size(20);
+}
+
+.create_account_font_green{
+    color: #2E7EFE !important;
+}
+
+.import_account_wrapper{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .import_account_head_line{
+        display: flex;
+        font-size: set-size(28);
+        padding: set-size(30) set-size(30);
+        background: white;
+        background-size: set-size(42);
+        span{
+            flex: 1;
+            margin-right: set-size(60);
+        }
+        img{
+            width: set-size(42);
+            height: set-size(42);
+        }
+    }
+
+    .import_auth_head{
+        background: #cc9f14;
+        color: white;
+        font-size: set-size(24);
+        padding: set-size(30);
+        .import_auth_font_green{
+            color: #00ff48;
+        }
+    }
+
+    .import_acccount_content_wrapper{
+        flex: 1;
+        margin-top: set-size(20);
+        background: white;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .import_account_desc_line{
+        border-bottom: 1px solid #e5e5e5;
+        padding: set-size(20) set-size(30) set-size(20) 0;
+        margin-left: set-size(30);
+        display: flex;
+        .import_account_info{
+            flex: 1;
+            flex-flow: column;
+            margin-left: set-size(20);
+            font-size: set-size(32);
+            color: #333333;
+            vertical-align: middle;
+            span{
+                display: inline-block;
+                line-height: set-size(90);
+                vertical-align: middle !important;
+            }
+        }
+    }
+
+    .import_account_mark_line{
+        padding: set-size(36) set-size(30) !important;
+        border-bottom: 1px solid #e5e5e5;
+        input{
+            width: 100%;
+            font-size: set-size(24);
+        }
+    }
+
+    .import_account_layer_button{
+        margin-top: set-size(20);
+    }
+
+}
+
+.import_auth_full_wrapper{
+    position: absolute;
+    top: set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .import_auth_wrapper{
+        .import_auth_head{
+            background: #00CA9D;
+            color: white;
+            margin: set-size(20) set-size(30) 0 set-size(30);
+            border-radius: set-size(10);
+            font-size: set-size(24);
+            padding: set-size(30);
+            .import_auth_font_green{
+                color: $prominent_color;
+            }
+        }
+        .import_auth_select{
+            padding: set-size(34) set-size(30);
+            font-size: set-size(28);
+            background: url("../img/img_arrow_right.png") no-repeat right set-size(30) center;
+            background-size: set-size(14) set-size(24);
+            display: flex;
+            border-bottom: 1px solid #e5e5e5;
+            span{
+                flex: 1;
+                &:nth-child(2){
+                    text-align: right;
+                    margin-right: set-size(50);
+                }
+            }
+        }
+        .import_auth_button_wrapper{
+            display: flex;
+            padding: set-size(50) set-size(30);
+            input{
+                flex: 1;
+                background: $prominent_color;
+                border: none;
+                color: white;
+                border-radius: 0.25rem;
+                padding: 0.65rem 0;
+                font-size: set-size(28);
+            }
+        }
+        .import_auth_single_account{
+            display: flex;
+            padding: set-size(30);
+            border-bottom: 1px solid #e5e5e5;
+            .import_auth_headimg{
+                width: set-size(90);
+                height: set-size(90);
+            }
+            .import_auth_desc{
+                flex: 1;
+                margin-left: set-size(20);
+                .import_auth_desc_uid{
+                    font-size: set-size(32);
+                    color: #333333;
+                }
+                .import_auth_desc_mark{
+                    float: right;
+                    font-size: set-size(24);
+                    color: #999999;
+                }
+                .import_auth_desc_total{
+                    font-size: set-size(26);
+                    color: #666666;
+                }
+                .import_auth_desc_count{
+                    font-size: set-size(26);
+                    color: #ff3f00;
+                }
+                div{
+                    &:nth-child(2){
+                        margin-top: set-size(10);
+                    }
+                    span{
+                        &:nth-child(2){
+                            margin-left: set-size(20);
+                        }
+                    }
+                }
+            }
+        }
+        .import_auth_dialog_wrapper{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .import_auth_select_account_wrapper{
+            background: white;
+            position: absolute;
+            z-index: 11;
+            margin: 0;
+            padding: 0;
+            height: set-size(300); 
+            bottom: set-size(-300);
+            left: 0;
+            right: 0;
+            overflow: auto;
+            border-radius: 0;
+        }
+        .import_auth_select_enter{
+            animation: account-list-enter both ease-in;
+            animation-duration: 300ms;
+        }
+        .import_auth_select_leave{
+            animation: account-list-leave both ease-in;
+            animation-duration: 300ms;
+        }
+    }
+}
+
+@keyframes account-list-enter {
+    from { bottom: set-size(-300); }
+    to { bottom: 0; }
+}
+
+@keyframes account-list-leave {
+    from { bottom: 0; }
+    to { bottom: set-size(-300); }
+}
+
+.create_account_bg_with_auth{
+
+    .create_account_import_wrapper{
+        flex: 0;
+    }
+    .crate_account_bottom_wrapper{
+        display: flex;
+        align-items: center;
+        margin-top: set-size(60);
+        .create_account_bottom{
+            flex: 1;
+        }
+    }
+}
+
+.account_manage_wrapper{
+    position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .layer_account_flex{
+        flex: 1;
+        overflow-y:auto;
+        padding-bottom: set-size(70);
+    }
+    .account_manage_line_wrapper{
+        display: flex;
+        flex-flow: column;    
+        flex: 1;
+        background: $white_color;
+        .account_manage_account_line{
+            display: flex;
+            border-bottom: 1px solid #e5e5e5;
+            padding: set-size(20) set-size(30) set-size(20) 0;
+            margin-left: set-size(30);
+            background: url("../img/img_qb_arrow_right.png") no-repeat right set-size(30) center;
+            background-size: set-size(16) set-size(80);
+            .account_manage_headimg{
+                width: set-size(90);
+                height: set-size(90);
+            }
+            .account_manage_desc{
+                display: flex;
+                flex: 1;
+                margin-left: set-size(20);
+                align-items:center;
+                span{
+                    &:nth-child(1){
+                        flex: 1;
+                        font-size: set-size(32);
+                        color: #333333;
+                    }
+                    &:nth-child(2){
+                        float: right;
+                        font-size: set-size(24);
+                        color: #999999;
+                        margin-right: set-size(44);
+                    }
+                }
+            }
+        }
+
+        .account_manage_detail_line{
+            display: flex;
+            padding: set-size(30) set-size(30) set-size(30) 0;
+            font-size: set-size(24);
+            label{
+                display: inline-block;
+                vertical-align: middle;
+                .check_box{
+                    width: set-size(40);
+                    height: set-size(40);
+                    border-radius: 0;
+                }
+                .checkbox_true{
+                    background: url('../img/img_radio_true.png') no-repeat;
+                    background-size: set-size(40) set-size(40);
+                  }
+                  .checkbox_false{
+                    background: url('../img/img_radio_false.png') no-repeat;
+                    background-size: set-size(40) set-size(40);
+                  }
+                input{
+                    vertical-align: middle;
+                }
+                &:nth-child(1){
+                    padding-top: set-size(4);
+                    span{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+                &:nth-child(2){
+                    flex: 1;
+                    text-align: right;
+                    .account_manage_balance{
+                        color: #ff3f00;
+                        font-size: set-size(30);
+                    }
+
+                }
+                span{
+                    &:nth-child(1){
+                        color:#666666;
+                    }
+                    &:nth-child(2n){
+                        margin-left: set-size(16);
+                    }
+                }
+            }
+            margin-left: set-size(30);
+        }
+
+    }
+}
+
+.account_manage_failure_zh{
+    background: url("../img/img_failure_zh.png") no-repeat right set-size(30) center !important;
+    background-size: set-size(178) set-size(106) !important;
+}
+.account_manage_failure_en{
+    background: url("../img/img_failure_en.png") no-repeat right set-size(30) center !important;
+    background-size: set-size(178) set-size(106) !important;
+}
+.account_auth_selected{
+    background: url("../img/img_selected.png") no-repeat right set-size(30) center !important;
+    background-size: set-size(34) set-size(34) !important;
+}
+
+.account_manage_stone{
+    height: set-size(20);
+    width: 100%;
+    background: $main_background_color;
+}
+
+.account_manage_btn_zone{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: set-size(90);
+    font-size: set-size(28);
+    text-align: center;
+    box-shadow:0px set-size(1) set-size(10) $prominent_color;
+    div{
+        flex: 1;
+        line-height: set-size(90);
+    }
+    .account_manage_btn_white{
+        background: white;
+        color: #333333;
+    }
+    .account_manage_btn_green{
+        background: #2E7EFE;
+        color: white;
+    }
+}
+
+.account_manage_font_red{
+    color: #ff3f00;
+}
+
+.account_detail_wrapper{
+    position: absolute;
+    top: set-size(90);
+    left: 0;
+    right: 0;
+    bottom: set-size(90);
+    background: white;
+    width: 100%;
+    .account_detail_head_line{
+        display: flex;
+        color: white;
+        padding: set-size(30);
+        background: url("../img/img_detail_bg.png") no-repeat;
+        background-size: 100%;
+        .account_detail_headimg{
+            width: set-size(140);
+            height: set-size(140);
+        }
+        .account_detail_desc{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            display: flex;
+            padding-left: set-size(50);
+            span{
+                display: inline-block;
+                &:nth-child(1){
+                    font-size: set-size(36);
+                    margin-top: set-size(32);
+                }
+                &:nth-child(2){
+                    overflow: hidden;
+                    font-size: set-size(24);
+                    padding-top: set-size(8);
+                }
+            }
+        }
+    }
+    .account_detail_balances{
+        display: flex;
+        text-align: center;
+        .account_detail_balance_line{
+            flex: 1;
+            margin: set-size(30) 0;
+            display: flex;
+            flex-flow: column;
+            &:nth-child(1){
+                border-right: 1px solid #e5e5e5;
+            }
+            span{
+                display: inline-block;
+                &:nth-child(1){
+                    color: #333;
+                    font-size: set-size(36);
+                    line-height: set-size(36);
+                }
+                &:nth-child(2){
+                    // margin-top: set-size(20);
+                    color: #999;
+                    font-size: set-size(24);
+                    padding-top: set-size(20);
+                }
+            }
+        }
+    }
+    .account_detail_ctrl_wrapper{
+        border-bottom: 1px solid #e5e5e5;
+        color: #333333;
+        padding-left: set-size(30);
+        font-size: set-size(28);
+        div{
+            padding: set-size(30) set-size(30) set-size(30) 0;
+            border-bottom: 1px solid #e5e5e5;
+            background: url("../img/img_qb_arrow_right.png") no-repeat right set-size(30) center;
+            background-size: set-size(14) set-size(80);
+            line-height: set-size(30);
+            &:nth-child(1){
+                background: white;
+                display: flex;
+                span{
+                    display: flex;
+                    &:nth-last-child(1){
+                        text-align: right;
+                        flex: 1;
+                        font-size: set-size(28)
+                    }
+                    input{
+                        width: 100%;
+                        text-align: right;
+                        font-size: set-size(30)
+                    }
+                }
+            }
+            &:nth-last-child(1){
+                border: none;
+            }
+        }
+    }
+
+    .account_detail_rqcode_wrapper{
+        display: flex;
+        flex-flow: column;
+        padding: set-size(70) set-size(20) set-size(50) set-size(20);
+        text-align: center;
+        span{
+            text-align: center;
+            display: inline-block;
+            font-size: set-size(32);
+            color: #333333;
+        }
+        .account_detail_rqcode{
+            margin: set-size(50) set-size(100) 0 set-size(100);
+            canvas{
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+    }
+
+    .account_detail_prikey_wrapper{
+        .account_detail_prikey_head{
+            padding:set-size(70) set-size(20) set-size(30) set-size(20);
+            color: #2eb300;
+            border-bottom: 1px solid #e5e5e5;
+            font-size: set-size(26);
+        }
+        .account_detail_prikey_title{
+            padding: set-size(30) set-size(20);
+            font-size: set-size(28);
+        }
+        .account_detail_prikey_content{
+            margin: 0 set-size(20);
+            padding: set-size(30) set-size(20);
+            font-size: set-size(30);
+            background: #efeff4;
+            border-radius: 10px;
+            word-wrap:break-word ;
+        }
+        .account_detail_prikey_button{
+            margin: set-size(30) set-size(20);
+            display: flex;
+            input{
+                margin: 0 !important;
+                flex: 1 1 0%;
+                background: $prominent_color;
+                border: none;
+                color: rgb(255, 255, 255);
+                border-radius: 0.25rem;
+                padding: 0.65rem 0;
+                font-size: set-size(26);
+            }
+        }
+    }
+
+}
+
+.change_password_wrapper{
+    position: absolute;
+    top: set-size(90);
+    left: 0;
+    right: 0;
+    background: white;
+    .change_password_form_wrapper{
+        padding-left: set-size(30);
+        border-bottom: 1px solid #e5e5e5;
+        font-size: set-size(26);
+        .change_password_input_line{
+            display: flex;
+            padding: set-size(30) set-size(30) set-size(30) 0;
+            border-top: 1px solid #e5e5e5;
+            input{
+                flex: 1;
+            }
+        }
+        .create_account_level_show{
+            line-height: set-size(60);
+        }
+        .create_account_level{
+            margin-right: 0;
+            padding-top: 0;
+        }
+        .change_password_clear_padding{
+            padding: set-size(10) set-size(30) set-size(10) 0;
+        }
+    }
+    .change_password_button{
+        display: flex;
+        margin-top: set-size(50);
+        button{
+            margin: set-size(30);
+        }
+    }
+}
+
+.create_auth_wrapper{
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: set-size(90);
+    display: flex;
+    flex-flow: column;
+    .create_auth_desc{
+        margin:set-size(20) set-size(30) set-size(30);
+        border-radius: set-size(10);
+        padding: set-size(30);
+        background: #00CA9D;
+        color: white;
+        .crate_auth_bottom_tips{
+            font-size: set-size(26);
+            display: inline-block;
+            &:nth-child(1){
+                margin-top: 0;
+                line-height: set-size(42);
+            }
+            .create_auth_font_green{
+                color: #00ff48;
+            }
+        }
+    }
+
+    .create_auth_form{
+        padding-left: set-size(30);
+        border-bottom: 1px #e5e5e5 solid;
+        .create_message_panel{
+            font-size: set-size(22);
+        }
+        .create_auth_input_line{
+            display: flex;
+            padding-top: set-size(34);
+            padding-bottom: set-size(34);
+            border-top: 1px #e5e5e5 solid;
+            font-size: set-size(26);
+            .create_account_level_wrapper{
+                margin-right: set-size(30);
+            }
+            &:nth-child(1){
+                border: none;
+            }
+            input{
+                flex: 1;
+                margin-left: set-size(60);
+                margin-right: set-size(30);
+            }
+        }
+
+        .create_auth_lock{
+            background: url("../img/img_password_lock_green.png") no-repeat left set-size(0) center;
+            background-size: set-size(30);
+        }
+
+        .create_auth_mark{
+            background: url("../img/img_wallet_name_green.png") no-repeat left set-size(0) center;
+            background-size: set-size(30);
+        }
+    }
+
+    .create_auth_protocol_wrapper{
+        padding-left: set-size(30);
+        padding-right: set-size(30);
+        margin-top: set-size(30);
+        font-size: set-size(24);
+        input{
+            position: relative;
+            top: set-size(2);
+        }
+        .create_auth_readed{
+            color: #666666;
+            margin-left: set-size(16);
+        }
+        .create_auth_protocol{
+            color: $prominent_color;
+        }
+    }
+
+    .create_auth_layer_button{
+        display: flex;
+        margin-top: set-size(50);
+        padding-left: set-size(30);
+        padding-right: set-size(30);
+        input{
+            font-size: set-size(28);
+            width: 100%;
+            height: set-size(80);
+            line-height: set-size(80);
+            background: rgb(204, 204, 204); 
+            border: none; 
+            color: rgb(255, 255, 255);
+            border-radius: .25rem;
+        }
+        .create_auth_button_useable{
+            background: $prominent_color;
+            border: none;
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    .create_auth_import_wrapper{
+        margin-top: set-size(50);
+        text-align: center;
+        flex: 1;
+        .create_auth_import{
+            color: $prominent_color;
+            font-size: set-size(26);
+        }
+    }
+}

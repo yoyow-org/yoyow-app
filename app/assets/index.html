@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="优优,YOYOW">
+    <meta name="description" content="YOYOW钱包">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' blob:; connect-src *;style-src 'self' 'unsafe-inline'; script-src res.wx.qq.com 'self' 'unsafe-inline' 'unsafe-eval' blob:; media-src *; img-src * data: content:;">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <link rel='apple-touch-icon' href='./logo.png'></link>
+    <title>YOYOW钱包</title>
+</head>
+<body>
+<script>
+    let scrWidth = document.documentElement.clientWidth;
+    let bl = scrWidth/750;
+    let rem = bl*40
+    var docEl = document.documentElement;
+    var fontEl = document.createElement('style');
+    docEl.firstElementChild.appendChild(fontEl);
+    fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+</script>
+<div id="content"></div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="cordova_plugins.js"></script>
+</body>
+</html>

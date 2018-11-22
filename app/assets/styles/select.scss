@@ -1,0 +1,59 @@
+input{
+  width: 120px;
+  height: 30px;
+  border: 1px #EEE solid;
+}
+.box_select{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top:0;
+  .box_list{
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index: 11;
+    background: #FFF;
+    .layer_ctr{
+      width: 100%;
+      height: 40px;
+      border-bottom: 1px #666 solid;
+    }
+    .layer_list{
+      width: 100%;
+      height: 210px;
+      overflow: auto;
+      position: relative;
+      .select_cur{
+        width: 100%;
+        height: 40px;
+        border: 1px #CCC solid;
+        position: absolute;
+        top: 85px;
+      }
+      .list{
+        width: 100%;
+        height: inherit;
+        display: flex;
+        overflow-y: hidden;
+        position: relative;
+        ul{
+          width: 100%;
+          height: inherit;
+          flex: 1;
+          position: absolute;
+          li{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+}

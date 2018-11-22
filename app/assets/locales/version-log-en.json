@@ -1,0 +1,68 @@
+[
+    {
+      "version":"v1.2.0.0",
+      "content": [
+        {
+          "item": "Newly added 3rd party service feature --- “Auto-reply for transfers”；users can set the amount YOYO they would like to charge for their valuable information, and other users in need can pay that amount YOYO to receive that information.          "
+        },
+        {
+          "item": "Fully Upgraded UI, optimized a large portion of user interaction experience."
+        }
+      ]
+    },
+    {
+        "version":"v1.1.0.0",
+        "content": [
+          {
+            "item": "Added token issuance related features, such as token creation, token issuance, token transfer and transaction details."
+          },
+          {
+            "item": "Added display function for user-freely-selected token types."
+          },
+          {
+            "item": "Overall layout optimization, added bottom navigation."
+          },
+          {
+            "item": "User experience optimizaion, added transition effects between pages."
+          }
+        ]
+      },
+    {
+        "version":"v1.0.0.0",
+        "content": [
+            {
+                "item": "YOYOW Mobile version V1.0 sparkles"
+            },
+            {
+                "item": "Manageable balance and change"
+            },
+            {
+                "item": "Fast money transfer"
+            },
+            {
+                "item": "QR code can be set up for collection"
+            },
+            {
+                "item": "You can create and manage contacts"
+            },
+            {
+                "item": "Managed platform authorization"
+            },
+            {
+                "item": "Can quickly scan authorization"
+            },
+            {
+                "item": "Earned integral"
+            },
+            {
+                "item": "Wallet can be created and managed"
+            },
+            {
+                "item": "Can quickly generate backup QR code"
+            },
+            {
+                "item": "Quick scan backup QR code import wallet"
+            }
+        ]
+     }
+]

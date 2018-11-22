@@ -1,0 +1,151 @@
+@import "colors";
+@import "define";
+@import "reset";
+.selectTransferRestore{
+  position: absolute;
+  top:set-size(90);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e4E4E4;
+  .selectTransferRestore_info{
+    background-color: #fff;
+    padding: set-size(34) 0;
+    p{
+      text-align: center;
+      font-size:set-size(34);
+      color: $main_color;
+    }
+  }
+  .selectTransferRestore_list{
+    // margin-top: set-size(30);
+    position: absolute;
+    left:0;
+    top:set-size(120);
+    right: 0;
+    bottom:0;
+    overflow:auto;
+    .selectTransferRestore_list_item{
+      background: url(../img/img_qb_arrow_right.png) no-repeat right set-size(30) center;
+      background-size: set-size(16) set-size(80);
+      background-color: $white_color;
+      padding: set-size(30);
+      margin-bottom: set-size(30);
+      .selectTransferRestore_list_item_title{
+        font-size: set-size(30);
+        line-height: set-size(30);
+      }
+      .selectTransferRestore_list_item_status{
+        height: set-size(30);
+        margin-top: set-size(20);
+        overflow: hidden;
+        .price{
+          float: left;
+          text-align: left;
+          font-size: set-size(24);
+          line-height: set-size(30);
+          color: $minor_color;
+          strong{
+            font-size: set-size(30);
+            line-height: set-size(30);
+            color: $red_color;
+          }
+        }
+        .date{
+          float: right;
+          text-align: right;
+          padding-right: set-size(46);
+          color: $minor_color;
+          span{
+            font-size: set-size(24);
+            float: right;
+          }
+          em{
+            font-size: set-size(24);
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.autoRestoreTransfer{
+  position: absolute;
+  top:set-size(90);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  .autoRestoreTransfer_info{
+    padding: 0 set-size(30);
+  }
+  .transferTo{
+    padding: set-size(34) 0 set-size(34) 0;
+    font-size:set-size(28);
+    line-height: set-size(28);
+    color: $black_color;
+    border-bottom:1px solid #e5e5e5;
+    span{
+      color: $prominent_color;
+    }
+    strong{
+      color:$red_color;
+    }
+  }
+  .gathering_remark{
+    padding: set-size(34) 0 set-size(34) 0;
+    font-size:set-size(32);
+    line-height: set-size(48);
+    color: $main_color;
+    border-bottom:1px solid #e5e5e5;
+    word-wrap:break-word;
+    word-break:break-all;
+  }
+  .poundage{
+    padding: set-size(30) set-size(30);
+    .poundage_left{
+      float: left;
+      height: set-size(40);
+      line-height: set-size(40);
+      font-size:set-size(24);
+      color: $normal_color;
+      strong{
+        color: $red_color;
+        margin-left: set-size(10);
+      }
+    }
+    .poundage_right{
+      float: right;
+      height: set-size(40);
+      line-height: set-size(40);
+      font-size:set-size(24);
+      .checkbox{
+        padding-left: set-size(60);
+        background: url(../img/img_radio_false.png) no-repeat;
+        background-size: set-size(40) set-size(40);
+        strong{
+          color: $red_color;
+          padding: 0  set-size(4)
+        }
+      }
+      .checkbox.checkbox_true{
+        background: url(../img/img_radio_true.png) no-repeat;
+        background-size: set-size(40) set-size(40);
+      }
+      .checkbox.checkbox_false{
+        background: url(../img/img_radio_false.png) no-repeat;
+        background-size: set-size(40) set-size(40);
+      }
+    }
+  }
+
+  .autoRestoreTransfer_button{
+    margin-top: set-size(50);
+    button{
+      width: set-size(690);
+      border-radius: set-size(10);
+      font-size: set-size(28);
+    }
+  }
+}

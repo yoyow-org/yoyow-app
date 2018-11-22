@@ -1,0 +1,18 @@
+{
+    "name": "com.yoyow.app",
+    "displayName": "YOYOW-APP",
+    "version": "1.0.0",
+    "description": "YOYOW APP",
+    "main": "index.js",
+    "author": "YOYOW Developer TEAM",
+    "license": "MIT",
+    "dependencies": {
+        "cordova-android": "^7.0.0"
+    },
+    "cordova": {
+        "plugins": {},
+        "platforms": [
+            "android"
+        ]
+    }
+}

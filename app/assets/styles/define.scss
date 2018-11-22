@@ -1,0 +1,12 @@
+@import "colors";
+
+@function set-size($size) {
+  @return $size/40* 1rem;
+}
+
+@mixin button_style($margin:0 0 0 set-size(20)) {
+  flex: 1;
+  border-radius:set-size(10);
+  margin: $margin;
+  border:set-size(1) $border_color solid;
+}

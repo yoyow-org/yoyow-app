@@ -1,0 +1,24 @@
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6
+,pre,code,form,fieldset,legend,input,textarea,
+p,th,td,hr,button,article,
+details,figure,footer,header,
+menu,nav,section {margin:0;padding:0;box-sizing: border-box;}
+input,textarea,button,select,em,i{
+  outline: none;
+  -webkit-appearance: none;
+  border:none;
+  font-style: normal;
+  background: none;
+  font-size:inherit;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+ul,li{
+  list-style: none;
+}
+h1,h2,h3,h4,h5{
+  font-weight: normal;
+}
+input[type="search"]::-webkit-search-cancel-button{
+  display: none;
+}

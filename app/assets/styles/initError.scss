@@ -1,0 +1,40 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.init_error_wrapper{
+    display: flex;
+    flex-flow: column;
+    .init_error_img{
+        margin: 0 auto;
+        margin-top: set-size(150);
+        width: set-size(192);
+        height: set-size(192);
+    }
+    .init_error_main{
+        margin-top: set-size(40);
+        text-align: center;
+        font-size: set-size(36);
+        color: #999999;
+    }
+    .init_error_reason{
+        margin-top: set-size(100);
+        margin-left: set-size(100);
+        margin-bottom: set-size(30);
+        font-size: set-size(28);
+        color: #333333;
+    }
+    .init_error_reason_wrapper{
+        margin-left: set-size(100);
+        margin-top: set-size(10);
+        font-size: set-size(26);
+        color: #666666;
+        .init_error_reload{
+            background: url("../img/img_reload.png") no-repeat right set-size(0) center;
+            padding-right: set-size(42);
+            background-size: set-size(26);
+            margin-left: set-size(20);
+            color: #2E7EFE;
+        }
+    }
+}
