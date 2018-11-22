@@ -1,0 +1,14 @@
+.npmrc
+.idea
+node_modules
+hash-history
+app-source
+package-lock.json
+.DS_Store
+
+cordova/hooks
+cordova/platforms
+cordova/plugins
+cordova/www
+cordova/package.json
+cordova/package-lock.json

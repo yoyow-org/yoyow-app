@@ -1,0 +1,60 @@
+@import "colors";
+@import "define";
+
+.updater-index{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    display: none;
+    .updater-progress{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        .mask{
+            z-index: 99 !important;
+        }
+        .updater-progress-layer{
+            position: absolute;
+            top:40%;
+            left: set-size(70);
+            right: set-size(70);
+            z-index: 100;
+            font-size: set-size(26);
+            padding: set-size(20);
+            background-color: #fff;
+            margin: set-size(20);
+            border: set-size(1) solid $search_bar_bg;
+            border-radius: set-size(10);
+            padding:set-size(0) set-size(30);
+            .updater-progress-percentage{
+                width: 100%;
+                text-align: center;
+                padding: set-size(20) set-size(0);
+            }
+            .updater-progress-box{
+                margin:set-size(5) set-size(0);
+                width:100%;
+                height: set-size(24);
+                border: set-size(2) solid #e5e5e5;
+                border-radius: set-size(20);
+                overflow: hidden;
+                .updater-progress-bar{
+                    width:0%;
+                    height:100%;
+                    float: left;
+                    background-color: #14c3a2;
+                    background-image: repeating-linear-gradient(-45deg, #9adbcb, #9adbcb set-size(20), #35b697 set-size(20), #35b697 set-size(40));
+                    /*background-size: set-size(700) 100%;*/
+                }
+            }
+            .updater-progress-title{
+                width: 100%;
+                text-align: center;
+                padding: set-size(20) set-size(0);
+            }
+        }
+    }
+}

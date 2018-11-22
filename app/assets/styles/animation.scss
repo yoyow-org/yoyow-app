@@ -1,0 +1,72 @@
+@import "colors";
+
+@keyframes loading {
+  0%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+};
+@keyframes toastShow{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+};
+@keyframes toastHide{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+};
+@keyframes loading_global {
+  0%{
+    transform: scale(1,1);
+    background: #2E7EFE;
+  }
+
+  100%{
+    transform: scale(1,0);
+    background: $prominent_color;
+  }
+}
+
+@keyframes loading_text {
+  0%{
+    color: #fff;
+  }
+  25%{
+    color: #2E7EFE
+  }
+  50%{
+    color: #2E7EFE
+  }
+  75%{
+    color: #2E7EFE
+  }
+  100%{
+    color: #fff;
+  }
+}
+
+@keyframes nav_show {
+  0%{
+    left: -60%;
+  }
+  100%{
+    left: 0;
+  }
+}
+@keyframes nav_hide {
+  0%{
+    left: 0;
+  }
+  100%{
+    left:-60%;
+  }
+}

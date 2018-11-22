@@ -1,0 +1,373 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.transferAutoRestore{
+    position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EFEFF4;
+  .create_auto_restore{
+    padding: set-size(30)  set-size(30) set-size(30) set-size(30);
+    background-color: $white_color;
+    margin-bottom: set-size(20);
+    h3{
+      font-size: set-size(30);
+      color: #333;
+    }
+    input{
+      padding-left: 0;
+      box-sizing: border-box;
+      width: set-size(690);
+      font-size: set-size(28)
+    }
+  }
+  /* 规则列表  */
+  .transferAutoRestore_List{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:set-size(200);
+    bottom: set-size(96);
+    overflow: auto;
+    .restoreList{
+      height: 100%;
+      ul{
+        height: 100%;
+      }
+      .restoreList_item{
+        background:$white_color;
+        margin-bottom: set-size(30);
+        overflow: hidden;
+        .restoreList_info{
+          float: left;
+          width: set-size(650);
+          margin-top: set-size(30);
+          padding-left: set-size(30);
+         
+          .restoreList_info_title{
+            display: flex;
+            span{
+              width: set-size(500);
+              overflow:hidden;
+              text-overflow:ellipsis;
+              white-space:nowrap;
+              display: inline-block;
+              text-align: left;
+              font-size: set-size(30);
+              line-height:set-size(34) ;
+            }
+            .restoreList_info_icon{
+              display: inline-block;
+              flex: 1;
+              padding-right: set-size(40);
+              background: url("../img/img_bg_transfor_restore_list_icon.png") no-repeat center right set-size(34);
+              background-size: set-size(30) set-size(30);
+            }
+          }
+          .restoreList_info_status{
+            margin-top: set-size(20);
+            display: flex;
+            .price{
+              flex:1;
+              text-align: left;
+              font-size: set-size(24);
+              color: $normal_color;
+              line-height:set-size(30) ;
+              strong{
+                font-size: set-size(30);
+                color: $red_color;
+              }
+            }
+            em{
+              display:inline-block;
+              vertical-align: middle;
+              flex:1;
+              text-align: right;
+              font-size: set-size(24);
+              color: $normal_color;
+              padding-right: set-size(30);
+              line-height:set-size(30) ;
+              strong{
+                font-weight: normal;
+              }
+            }
+          }
+        }
+        .restoreList_edit{
+          float: right;
+          width: set-size(100);
+          height: set-size(140);
+          background: url("../img/img_bg_transfer_restore_edit.png") no-repeat center center   $prominent_color;
+          background-size: set-size(40)  set-size(40) ;
+        }
+      }
+    }
+  }
+  /*  按钮  */
+  .transferAutoRestore_btns{
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: set-size(96);
+    background-color: $white_color;
+    button{
+      margin-left: 0;
+      border-radius: 0;
+      font-size: set-size(26) !important;
+      &:first-child{
+        border-top: 1px solid #CCCCCC !important;
+        background-color: #FAFAFA !important;
+        color: #666 !important; 
+      }
+      &:last-child{
+        background-color:$prominent_color !important;
+        color: #fff !important; 
+      }
+    }
+  }
+
+  /* 无规则 */
+  .no_rule{
+    background-color: $white_color;
+    height: 100%;
+    display: flex;
+    height: 100%;
+    flex:1;
+    flex-direction: column;
+    img{
+      margin-top: set-size(120);
+      align-self: center;
+      width:set-size(322);
+      height:set-size(214);
+    }
+    p{
+      align-self: center;
+      font-size: set-size(32);
+      line-height: set-size(44);
+      margin-top: set-size(40);
+      color: $minor_color;
+    }
+  }
+  
+}
+
+.rule_add{
+  position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+  .rule_add_ruleName{
+    margin-left: set-size(30);
+    border-bottom:1px solid #E5E5E5;
+    input{
+      padding:set-size(34) 0;
+      width:set-size(690);
+      font-size:set-size(28);
+      line-height: set-size(28);
+      vertical-align: middle;
+      color: #333;
+      &::placeholder{
+        color: #ccc;
+      }
+    }
+  }
+  .rule_add_money{
+    position: relative;
+    margin-left: set-size(30);
+    border-bottom:1px solid #E5E5E5;
+    input{
+      padding: set-size(34) set-size(182) set-size(34) 0;
+      width:set-size(578);
+      font-size:set-size(28);
+      line-height: set-size(28);
+      vertical-align: middle;
+      color: #333;
+      &::placeholder{
+        color: #ccc;
+      }
+    }
+    p{
+      position: absolute;
+      right: set-size(30);
+      top:set-size(34);
+      font-size:set-size(28);
+      line-height: set-size(28);
+      color: #333;
+    }
+  }
+  .rule_add_select_date{
+    overflow: hidden;
+    padding: set-size(34) 0;
+    margin-left: set-size(30);
+    border-bottom:1px solid #E5E5E5;
+    .rule_add_select_date_item{
+      font-size: set-size(28);
+      &:first-child{
+        float: left;
+      }
+      &:last-child{
+        float: right;
+        margin-right: set-size(30);
+      }
+    }
+    .checkbox{
+      display: inline-block;
+      height: set-size(40);
+      padding-left: set-size(40);
+      background: url('../img/img_radio_false.png') no-repeat ;
+      background-size: set-size(40) set-size(40);
+      line-height: set-size(40);
+      span{
+        display: inline-block;
+        margin-left: set-size(10);
+        margin-right: set-size(10)
+      }
+    }
+
+    .checkbox.checkbox_seleted{
+      background: url('../img/img_radio_true.png') no-repeat ;
+      background-size: set-size(40) set-size(40);
+    }
+    .set-date{
+      display: inline-block;
+      >div{
+        display: inline-block;
+      }
+      i{
+        display: inline-block;
+        width: set-size(28);
+        height: set-size(28);
+        background: url(../img/img_arrow_down.png) no-repeat center top set-size(4);
+        background-size: set-size(28) set-size(28);
+      }
+      .datePicker{
+        color: $prominent_color;
+      }
+    }
+  }
+  .add_remark{
+    padding: set-size(30) set-size(30) 0 set-size(30);
+    border-bottom:1px solid #e5e5e5;
+    textarea{
+      width: set-size(690);
+      height: set-size(112);
+      font-size: set-size(28);
+      color: $main_color;
+      &::placeholder{
+        color: #ccc;
+      }
+    }
+    .length{
+      text-align: right;
+      font-size: set-size(26);
+      color: #666;
+      margin-top: set-size(6);
+      margin-bottom: set-size(32);
+      em{
+        color: $red_color;
+      }
+    }
+  }
+  .rule_add_button{
+    margin: 0 auto;
+    margin-top: set-size(50);
+    button{
+      margin-left: set-size(30);
+      width: set-size(690);
+      background-color: $prominent_color !important;
+    }
+  }
+  .rule_edit_button{
+    margin-top: set-size(50);
+    button{
+      width: set-size(315);
+      margin: 0 set-size(30);
+      &:first-child{
+        background-color: $border_color !important;
+        color: $normal_color!important;
+      }
+      &:last-child{
+        background-color: $prominent_color !important;
+      }
+    }
+  }
+}
+
+.save_QRcode{
+  position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:$prominent_color;
+    .save_QRcode_con{
+        background-color: #fff;
+        margin: set-size(50) set-size(30) set-size(30) set-size(30);
+        border-radius: set-size(10);
+         padding:set-size(80) set-size(95) set-size(60) set-size(95);
+       // overflow: hidden;
+       .QR_box{
+        // width: set-size(500);
+        // overflow: hidden;
+        display: flex;
+        .qrcode_view{
+          
+          background-color: #fff;
+          // padding-top: set-size(36);
+          // padding-bottom: set-size(36);
+         // align-self: center;
+        }
+       }
+       
+        .save_QRcode_button{
+          margin-top: set-size(30);
+          button{
+            width: 100%;
+            margin: 0;
+          }
+        }
+    }
+}
+
+.showRestoreInfo{
+  position: absolute;
+  top:set-size(90);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  .showRestoreInfo_con{
+    padding: set-size(30) set-size(30);
+    background-color: #fff;
+    
+  }
+  .showRestoreInfo_detail{
+    font-size:set-size(28);
+    line-height: set-size(40);
+    border:1px solid #e5e5e5;
+    border-radius: set-size(10);
+    padding: set-size(30);
+    word-wrap:break-word;
+    word-break:break-all;
+  }
+  .showRestoreInfo_button{
+    button{
+      margin: set-size(30) 0 0 0;
+      width: set-size(690);
+    }
+  }
+}
+
+.am-picker-popup-header-left{
+  color: $prominent_color;
+}
+.am-picker-popup-header-right{
+  color: $prominent_color;
+}

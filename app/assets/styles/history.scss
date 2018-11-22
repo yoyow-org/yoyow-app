@@ -1,0 +1,83 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.history_content{
+    position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .history_list{
+        height: 100%;
+        overflow-y: auto;
+        background-color: #ffffff;
+        ul{
+            li:last-child{
+                margin-left:set-size(0);
+                padding:set-size(30) set-size(30) set-size(30) set-size(30);
+            }
+            li{
+                display:flex;
+                border-bottom: set-size(1) solid $search_bar_bg;
+                padding:set-size(30) set-size(30) set-size(30) set-size(0);
+                align-items:center;
+                margin-left:set-size(30);
+                .detail_content{
+                    text-align: left;
+                    .deteil_type{
+                        color: $main_color;
+                       // font-weight: bold;
+                        font-size: set-size(28);
+                    }
+                    .deteil_date{
+                        color: $minor_color;
+                        font-size: set-size(24);
+                        font-weight: initial;
+                        padding-top: set-size(8);
+                        display: block;
+                    }
+                    button{
+                        margin-left: set-size(10);
+                        width: set-size(30);
+                        height:set-size(30);
+                        background: url("../img/img_assetdetail_remark.png") no-repeat bottom;
+                        background-size: set-size(30);
+                    }
+                }
+                .detail_count{
+                    flex: 1;
+                    color: $main_color;
+                    font-size: set-size(34);
+                    text-align: right;
+                }
+                .red{
+                    color: #ff3f00;
+                }
+                .loadMore{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .history_undata{
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        .history_undata_content{
+            width: 100%;
+            text-align: center;
+            img{
+                margin-top: set-size(200);
+                width: set-size(440);
+                height: set-size(288);
+            }
+            span{
+                font-size:set-size(30);
+                line-height: set-size(90);
+                color: $minor_color;
+            }
+        }
+    }
+}

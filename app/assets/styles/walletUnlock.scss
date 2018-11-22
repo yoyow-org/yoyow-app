@@ -1,0 +1,71 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.wallet_unlock_title{
+    font-size: set-size(28);
+}
+
+.wallet_unlock_input{
+    display: flex;
+    padding: 1px set-size(20) !important;
+    span{
+        line-height: set-size(98) !important;
+        color: #333333;
+        font-size: set-size(28);
+    }
+    .input{
+        margin-left: set-size(20);
+    }
+}
+
+.wallet_unlock_fees_line{
+    //display: flex;
+    font-size: set-size(24);
+    .wallet_unlock_font_red{
+        color: #ff3f00 !important;
+    }
+    overflow: hidden;
+    div{
+        float: left;
+        
+        text-align: -webkit-auto;
+        flex: 1;
+        span{
+            &:nth-child(1){
+                margin: 0;
+            }
+            line-height: set-size(40);
+            display:inline-block;
+            margin-left: set-size(6);
+        }
+        &:nth-child(2){
+            float: right;
+            text-align: right;
+            label{
+                float: left;
+                input{
+                    float: left;
+                }
+                span{
+                    float: left;
+                }
+            }
+            .check_box{
+                display: inline-block;
+                height: set-size(40);
+                padding-left: set-size(40);
+                background: url('../img/img_radio_false.png') no-repeat ;
+                background-size: cover;
+                line-height: set-size(40);
+            }
+            .check_box.checkbox_true{
+                background: url('../img/img_radio_true.png') no-repeat ;
+                background-size: cover;
+            }
+
+        }
+    }
+    
+    
+}

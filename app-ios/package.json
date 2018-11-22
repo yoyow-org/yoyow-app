@@ -1,0 +1,47 @@
+{
+    "name": "com.yoyow.app",
+    "displayName": "YOYOW-APP",
+    "version": "1.0.0",
+    "description": "YOYOW APP",
+    "main": "index.js",
+    "author": "YOYOW Developer TEAM",
+    "license": "MIT",
+    "dependencies": {
+        "com.lampa.startapp": "git+https://github.com/lampaa/com.lampa.startapp.git",
+        "cordova-ios": "^4.5.4",
+        "cordova-plugin-appavailability": "^0.4.2",
+        "cordova-plugin-inappbrowser": "^3.0.0",
+        "cordova-plugin-splashscreen": "^5.0.2",
+        "cordova-plugin-whitelist": "^1.3.3",
+        "org.devgeeks.Canvas2ImagePlugin": "https://github.com/devgeeks/Canvas2ImagePlugin.git",
+        "cordova-plugin-decimal-keyboard": "https://github.com/simanaitis/cordova-plugin-decimal-keyboard.git",
+        "cordova-plugin-network-information": "^2.0.1",
+        "cordova-plugin-statusbar": "^2.4.1",
+        "cordova-plugin-ionic-webview": "^1.1.19",
+        "cordova-plugin-http": "https://github.com/Switch168/cordova-HTTP.git",
+        "phonegap-plugin-barcodescanner": "https://github.com/bulangnisi/phonegap-plugin-barcodescanner.git",
+        "cordova-hot-code-push-plugin": "https://github.com/4550155/cordova-hot-code-push.git",
+        "cordova-plugin-native-spinner": "https://github.com/bulangnisi/cordova-plugin-native-spinner.git"
+    },
+    "cordova": {
+        "plugins": {
+            "com.lampa.startapp": {},
+            "cordova-plugin-appavailability": {},
+            "cordova-plugin-inappbrowser": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-whitelist": {},
+            "org.devgeeks.Canvas2ImagePlugin": {},
+            "cordova-plugin-decimal-keyboard": {},
+            "cordova-plugin-network-information": {},
+            "cordova-plugin-statusbar": {},
+            "cordova-plugin-ionic-webview": {},
+            "cordova-plugin-http": {},
+            "phonegap-plugin-barcodescanner": {},
+            "cordova-hot-code-push-plugin": {},
+            "cordova-plugin-native-spinner": {}
+        },
+        "platforms": [
+            "ios"
+        ]
+    }
+}

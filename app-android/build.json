@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "./androidKeyStore/debug.keystore",
+            "storePassword": "yoyo12346debug",
+            "alias": "yoyow-app-debug",
+            "password" : "yoyo12346debug",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "./androidKeyStore/release.keystore",
+            "storePassword": "yoyo12346release",
+            "alias": "yoyow-app-release",
+            "password" : "yoyo12346release",
+            "keystoreType": ""
+        }
+    }
+}

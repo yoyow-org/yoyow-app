@@ -1,0 +1,41 @@
+@import "colors";
+@import "define";
+@import "reset";
+
+.setting_layer{
+    position: absolute;
+    top:set-size(90);
+    left: 0;
+    right: 0;
+}
+.settings_link_line{
+    border-bottom: 1px solid #cccccc;
+    display: block;
+    padding: set-size(30) ;
+    color:$main_color;
+    text-decoration: none;
+    font-size: set-size(30);
+    background-size: set-size(14) set-size(24);
+    border-bottom: set-size(1) #e5e5e5 solid;
+    .setting_line_content{
+        color: #333 ;
+        text-decoration: none;
+        display: flex;
+        .settings_left_span{
+            flex: 1;
+        }
+        .settings_right_span{
+            margin-right: set-size(30);
+        }
+    }
+}
+
+.settings_line_arrow{
+    background: url("../img/img_arrow_right.png") no-repeat right set-size(30) center;
+    background-size: set-size(14) set-size(24) !important;
+}
+
+.settings_select_active{
+    background: url("../img/img_selected.png") no-repeat right set-size(30) center;
+    background-size: set-size(34) set-size(34) !important;
+}
