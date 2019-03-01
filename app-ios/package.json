@@ -17,7 +17,7 @@
         "cordova-plugin-decimal-keyboard": "https://github.com/simanaitis/cordova-plugin-decimal-keyboard.git",
         "cordova-plugin-network-information": "^2.0.1",
         "cordova-plugin-statusbar": "^2.4.1",
-        "cordova-plugin-ionic-webview": "^1.1.19",
+        "cordova-plugin-ionic-webview": ">=2.2.0",
         "cordova-plugin-http": "https://github.com/Switch168/cordova-HTTP.git",
         "phonegap-plugin-barcodescanner": "https://github.com/bulangnisi/phonegap-plugin-barcodescanner.git",
         "cordova-hot-code-push-plugin": "https://github.com/4550155/cordova-hot-code-push.git",
